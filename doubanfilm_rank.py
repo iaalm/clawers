@@ -33,7 +33,7 @@ def get_rank(film_id):
 
 def create_table(conn):
     conn.execute('create table film (id int, name varchar(64), rank short)')
-    conn.execute('insert into film (id,name,rank) values (3628,"",-1)')
+    conn.execute('insert into film (id,name,rank) values (3628,"",0)')
     conn.commit()
 
 if __name__ == '__main__':
